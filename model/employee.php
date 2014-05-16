@@ -1,27 +1,27 @@
 <?php
 
 class employee{
-	var $db;
-	function __construct($dbcon){
-		echo 'employee made<br>';
-		$this->db = $dbcon;	
- 	}
+
+	public function __construct(){
+
+	}
 
 	public function create($inputs){
 		$post_name=$inputs['name'];
 		$post_email=$inputs['email'];
 		$post_phone=$inputs['phone'];
 		$post_address=$inputs['address'];
-		$post_salary=$inputs['basic_salary'];
-		$post_baccount=$inputs['bank_account'];
+		$post_baccount=$inputs['basicaccout'];
 		$post_anl=$inputs['annual_leave'];
 
-		$neweid = "1";
-	
-		mysqli_query($this->db, "INSERT INTO employee (eid, name, email, phone, address, basic_salary, bank_account, annual_leave) VALUES ($neweid, $post_name, $post_email, $post_phone, $post_address, $post_salary, $post_baccount, $post_anl)");
-		return "succ insert<br>";
-	}
+		$insertSQL = "INSERT INTO employee (name, email, phone, address, basicaccout, annual_leave) VALUES ($post_name, $post_email, $post_phone, $post_address, $post_baccount, $post_anl)";
+		$Result = mysql_query($insertSQL) or die(mysql_error());
+		if(mysql_insert_id()){
+			return mysql_insert_id();
+		}else{
+			return false;
+		}
 		
-}
+	}
 
 ?>
