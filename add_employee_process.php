@@ -1,6 +1,7 @@
 <?php
 include_once("hook.php");
 include_once("model/employee.php");
+print_r($dbcon);
 $employee = new employee($dbcon);
 
 //寫入
@@ -15,12 +16,13 @@ $formdata['annual_leave'] = (isset($_POST['annual_leave']))? $_POST['annual_leav
 $employee->create($formdata);
 
 
+
 //轉跳
 if(isset($_POST['send'])){
-	// header("location:add_employee.php");
+	header("location:add_employee.php");
 	echo "send function works";
 }else{
-	// header("location:employee_list.php");
+	header("location:employee_list.php");
 	echo "back to add";
 }
 
