@@ -6,7 +6,6 @@ class DBcon{
     var $dbname = 'salary_payship';
 
     function __construct(){
-        echo "db create!<br>";
     }
  
     function connect(){
@@ -14,6 +13,5 @@ class DBcon{
         mysqli_query($conn, "SET NAMES 'utf8'");
         return $conn;    
     }
-    
 }
 ?>

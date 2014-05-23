@@ -9,3 +9,6 @@ salary_payship
 <br>dbuser = 'admin';
 <br>dbpass = '123456';
 <br>dbname = 'salary_payship';
+
+
+
