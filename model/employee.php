@@ -6,7 +6,7 @@ class employee{
 		$this->db = $dbcon;	
  	}
 
-	public function create($inputs){
+	public function create($inputs=NULL){
 		$post_name=$inputs['name'];
 		$post_email=$inputs['email'];
 		$post_phone=$inputs['phone'];
@@ -26,8 +26,8 @@ class employee{
 	
 	public function find($condition=NULL){
 		$extraQuery = '';
-		if(isset($condition['eid'])){
-			$extraQuery.= ' WHERE eid ='.$condition['eid'];
+		if(isset($condition)){
+			$extraQuery.= ' WHERE eid ="'.$condition.'"';
 		}
 
 		$result = $this->db->query('SELECT * FROM employee'.$extraQuery);
@@ -38,8 +38,34 @@ class employee{
 		return $dataArray;
 	}
 
-	public function update($inputs=NULL){}
-	public function destroy($condition=NULL){}
+	public function update($inputs=NULL){
+		$post_eid=$inputs['eid'];
+		$post_name=$inputs['name'];
+		$post_email=$inputs['email'];
+		$post_phone=$inputs['phone'];
+		$post_address=$inputs['address'];
+		$post_salary=$inputs['basic_salary'];
+		$post_baccount=$inputs['bank_account'];
+		$post_anl=$inputs['annual_leave'];
+
+		mysqli_query($this->db, "UPDATE employee 
+			SET name ='$post_name', 
+				email = '$post_email', 
+				phone = '$post_phone', 
+				address='$post_address', 
+				basic_salary = 'basic_salary', 
+				bank_account = '$post_baccount', 
+				annual_leave = '$post_anl'
+			WHERE eid ='$post_eid'"); 
+
+
+	}
+		
+	public function destroy($condition=NULL){
+		//delete
+		mysqli_query($this->db, "DELETE FROM employee WHERE eid=$condition");
+
+	}
 }
 
 ?>

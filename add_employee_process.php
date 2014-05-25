@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include_once("hook.php");
 include_once("model/employee.php");
 $employee = new employee($dbcon);
@@ -21,5 +22,5 @@ if(isset($_POST['send'])){
 }else{
 	header("location:add_employee.php");
 }
-
+ob_end_flush();
 ?>
