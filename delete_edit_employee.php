@@ -18,7 +18,7 @@ if(isset($_GET['edit'])){
 		echo '<tr><td>住址：</td><td><input type="text" name ="address" value="'.$item['address'].'"></td></tr>';
 		echo '<tr><td>基本薪資：</td><td><input type="text" name ="basic_salary" value="'.$item['basic_salary'].'"></td></tr>';
 		echo '<tr><td>銀行帳號：</td><td><input type="text" name ="bank_account" value="'.$item['bank_account'].'"></td></tr>';
-		echo '<tr><td>年特休：</td><td><input type="text" name ="annual_leave="'.$item['annual_leave'].'"></td></tr>';
+		echo '<tr><td>年特休：</td><td><input type="text" name ="annual_leave=" value="'.$item['annual_leave'].'"></td></tr>';
 	}
 	echo '<tr><td></td><td><input type="submit" value=send name="send"></td></tr>';
 	echo '</table>';
