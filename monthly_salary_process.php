@@ -1,26 +1,7 @@
 <?php
 require_once('hook.php');
 require_once('model/salary_payship.php');
-/*
-function check_test() {
-    echo $_POST['subsidy'] . '<br/>';
-    if (isset($_POST['subsidy']) and is_int($_POST['subsidy'])) {
-        echo "subsidy OK";
-    }
-    else {
-        echo "subsidy fails";
-    }
-    $aa = "23.56";
-    $aaa = (int)$aa;
-    echo '<br/>' . $aaa;
-    if (isset($_POST['tax'])) {
-        echo 'ggg is set';
-    }
-    else {
-        echo 'ggg is not set.';
-    }
-}
- */
+
 function regulate_payship_input() {
     if (isset($_POST['year']) and is_numeric($_POST['year']) 
         and isset($_POST['month']) and is_numeric($_POST['month'])) {
