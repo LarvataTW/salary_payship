@@ -86,7 +86,7 @@ class payship{
         }
     }
     public function destroy() {
-        $delete_query = "DELETE FROM monthly_salary WHERE id='$this->id'";
+        $query = "DELETE FROM `monthly_salary` WHERE `id`='$this->id'";
         if (!mysqli_query($this->db, $query)) {
             die('Error: ' . mysqli_error($this->db));
         }
@@ -94,10 +94,10 @@ class payship{
 }
 
 function summarize_payship($dbcon, $date) {
-    $sql_query = "SELECT employee.eid AS employee_id, employee.name AS name, employee.basic_salary AS basic_salary, monthly_salary.finalwage AS finalwage FROM employee INNER JOIN monthly_salary ON monthly_salary.employee_id=employee.eid WHERE monthly_salary.date='$date'";
+    $sql_query = "SELECT monthly_salary.id AS payship_id, employee.eid AS employee_id, employee.name AS name, employee.basic_salary AS basic_salary, monthly_salary.finalwage AS finalwage FROM employee INNER JOIN monthly_salary ON monthly_salary.employee_id=employee.eid WHERE monthly_salary.date='$date'";
     $result = mysqli_query($dbcon, $sql_query);
     if (!$result) {
-        die('Error: ' . mysqli_error($this->db));
+        die('Error: ' . mysqli_error($dbcon));
     }
     $summary = array();
     $counter = 0;

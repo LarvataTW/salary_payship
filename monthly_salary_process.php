@@ -90,7 +90,7 @@ function regulate_payship_input() {
 
 function create_payship($db) {
     $inputs = regulate_payship_input();
-    print_r($inputs);
+    //print_r($inputs);
 
     if (0 == $inputs) {
         header("location:add_monthly_salary.php?error=1");
@@ -108,7 +108,7 @@ function create_payship($db) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if ($_GET['action'] == 'delete') {
-        $payship = new payship($db);
+        $payship = new payship($dbcon);
         $payship->id = $_GET['id'];
         $payship->destroy();
         header('Loation: payship_list.php');
@@ -116,7 +116,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 }
 else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_POST['action'] == 'create') {
-        echo "gggg";
         create_payship($dbcon);
         if (isset($_POST['send'])) {
             header("Location: payship_list.php");

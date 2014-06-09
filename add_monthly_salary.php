@@ -21,7 +21,6 @@ for ($year = 2013; $year < 2020; $year++) {
 }
 $html_year_select = $html_year_select . '</select>';
 
-
 $html_month_select = '<select name="month">';
 for ($month = 1; $month <= 12; $month++) {
     $html_month_select = $html_month_select . '<option value="' . $month . '">' . $month . '</option>';
