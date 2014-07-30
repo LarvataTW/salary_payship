@@ -18,13 +18,13 @@ $employeeList = $employee->find();
 <html>
 <head>
 <title>Employee List</title>
-<link type="text/css" rel="stylesheet" href="stylesheet.css">
+<link type="text/css" rel="stylesheet" href="css/stylesheets/style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-	<div class="body">
+	<div class="content_wrapper">
 		<form action="delete_edit_employee.php" action="get">
-		<table id ="01" >
+		<table class="form_table" >
 			<tr>
 				<th>選擇</th>
 				<th>員工編號</th>
