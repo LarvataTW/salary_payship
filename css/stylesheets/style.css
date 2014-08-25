@@ -100,6 +100,7 @@ a:visited {
 
 /* line 23, ../sass/style.scss */
 body {
+  background: url("../../img/tileable_wood_texture.png");
   width: 100%;
   min-width: 980px;
   font-size: 18px;
@@ -111,39 +112,39 @@ body {
   height: 100%;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 html {
   width: 100%;
   height: 100%;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .btn {
   cursor: pointer;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .drag {
   cursor: move;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .clear, .clr {
   clear: both;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .error {
   color: #E14900;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 strong {
   font-weight: bold;
 }
 
 /* start custom css */
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .header {
   box-sizing: border-box;
   height: 80px;
@@ -154,13 +155,13 @@ strong {
   top: 0;
   left: 0;
 }
-/* line 71, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .header .index_logo {
   height: 80px;
   margin-left: 40%;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .menu {
   display: inline-block;
   position: relative;
@@ -169,7 +170,7 @@ strong {
   padding: 40px;
   float: right;
 }
-/* line 86, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .menu li {
   display: inline;
   margin: 0 20px 0 0;
@@ -177,34 +178,34 @@ strong {
   font-size: 1em;
   text-shadow: 0px 1px 0px rgba(76, 76, 76, 0.5) inset;
 }
-/* line 92, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .menu li:hover {
   font-color: #FFF;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .logo {
   margin-left: 10px;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .menutext {
   color: #98C73D;
 }
-/* line 105, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .menutext:hover {
   color: #DDD;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .content_wrapper {
   padding-top: 80px;
 }
-/* line 112, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .content_wrapper a {
   color: #333;
 }
-/* line 116, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .content_wrapper .block {
   width: 25%;
   box-sizing: border-box;
@@ -213,7 +214,7 @@ strong {
   transition: 1s;
   font-color: #AAA;
 }
-/* line 128, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .content_wrapper .block svg {
   margin: 50px auto 10px;
   padding: 10px;
@@ -223,74 +224,74 @@ strong {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 17px;
 }
-/* line 137, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .content_wrapper .block .index_h1 {
   font-size: 3em;
   font-family: arial-black;
 }
-/* line 142, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .content_wrapper .block1 {
   background: #D0DD2B;
 }
-/* line 144, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .content_wrapper .block1:hover {
   background: rgba(208, 221, 43, 0.3);
   transition: 0.5s;
 }
-/* line 149, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .content_wrapper .block2 {
   background: #98C73D;
 }
-/* line 151, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .content_wrapper .block2:hover {
   background: rgba(152, 199, 61, 0.3);
   transition: 0.5s;
 }
-/* line 156, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .content_wrapper .block3 {
   background: #00A9E0;
 }
-/* line 158, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .content_wrapper .block3:hover {
   background: rgba(0, 169, 224, 0.3);
   transition: 0.5s;
 }
-/* line 163, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .content_wrapper .block4 {
   background: #67CDDC;
 }
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .content_wrapper .block4:hover {
   background: rgba(103, 205, 220, 0.3);
   transition: 0.5s;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .left {
   float: left;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .right {
   float: right;
 }
 
-/* line 179, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 #index_wrapper {
   background: url("../../img/desk.jpg") center center;
   background-size: cover;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .content_wrapper_add_employee {
   padding-top: 100px;
 }
-/* line 190, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .content_wrapper_add_employee .form_block1 {
   box-sizing: border-box;
   height: 560px;
@@ -300,24 +301,24 @@ strong {
   margin: 0px auto 10px;
   padding: 10px 30px 20px 30px;
 }
-/* line 198, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .content_wrapper_add_employee .form_block1 .row {
   margin-bottom: 10px;
 }
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .content_wrapper_add_employee .form_block1 h1 {
   line-height: 60px;
   text-align: center;
   font-size: 30px;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .formm {
   width: 100px;
   display: inline-block;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .inputform {
   border: 1px solid #DADADA;
   color: #888;
@@ -336,7 +337,7 @@ strong {
   -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
 }
 
-/* line 233, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .inputbuttom {
   background: #E27575;
   border: none;
@@ -348,23 +349,23 @@ strong {
   cursor: pointer;
   font-size: 16px;
 }
-/* line 244, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .inputbuttom:hover {
   background-color: #911717;
 }
 
-/* line 249, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .content_wrapper_employee_list {
   padding-top: 100px;
 }
-/* line 251, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .content_wrapper_employee_list h1 {
   line-height: 20px;
   text-align: center;
   font-size: 20px;
   padding-bottom: 25px;
 }
-/* line 257, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 {
   width: 80%;
   background: #98C73D;
@@ -372,7 +373,7 @@ strong {
   margin: 0px auto 10px;
   padding: 30px 3% 30px;
 }
-/* line 263, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table {
   box-sizing: border-box;
   width: 100%;
@@ -381,7 +382,7 @@ strong {
   padding: 0px;
   margin-bottom: 10px;
 }
-/* line 270, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -391,25 +392,25 @@ strong {
   padding: 0px;
   border-radius: 10px;
 }
-/* line 278, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table th {
   text-align: center;
   line-height: 30px;
   background: #007f00;
 }
-/* line 283, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table tr {
   height: 60px;
 }
-/* line 286, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table tr:nth-child(odd) {
   background-color: #dbfcdb;
 }
-/* line 289, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table tr:nth-child(even) {
   background-color: #dbfcdb;
 }
-/* line 292, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table td {
   vertical-align: middle;
   border: 5px solid #98c73d;
@@ -417,14 +418,14 @@ strong {
   text-align: left;
   padding: 10px;
 }
-/* line 300, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .form_table tr:first-child td {
   background-color: #839b6b;
   text-align: center;
   border-width: 0px 0px 1px 1px;
   color: #ffffff;
 }
-/* line 308, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .content_wrapper_employee_list .wrapper_block2 .input_buttom {
   text-align: center;
   margin-right: 20px;

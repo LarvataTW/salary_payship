@@ -25,7 +25,7 @@ $employeeList = $employee->find();
 	<?php
 	require_once("header.php");
 	?>
-	<div class="content_wrapper_employee_list">>
+	<div class="content_wrapper_employee_list">
 		<div class="wrapper_block2">
 			<h1>員工清單</h1>
 			<form action="delete_edit_employee.php" action="get">
